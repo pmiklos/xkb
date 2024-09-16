@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+	<optionList>
+		<group allowMultipleSelection="true">
+			<configItem>
+				<name>xps13</name>
+				<description>XPS13 Options</description>
+			</configItem>
+			<option>
+				<configItem>
+					<name>xps13:mac</name>
+					<description>Apple Magic keyboard meta keys on XPS13</description>
+				</configItem>
+			</option>
+		</group>
+	</optionList>
+</xkbConfigRegistry>

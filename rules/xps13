@@ -1,0 +1,6 @@
+// This is not supported by setxkbmap
+// ! include %S/evdev
+
+! option                  = symbols
+  xps13:mac               = +xps13(mac)
+

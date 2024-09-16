@@ -1,0 +1,12 @@
+// Simulate Apple Magic Keyboard on XPS13
+partial modifier_keys
+xkb_symbols "mac" {
+//	include "us(basic)"
+    key <RCTL> { [ Alt_R ] };    # Remap Right Control to Alt
+    key <LALT> { [ Meta_L ] };   # Remap Left Alt to Command
+    key <RALT> { [ Meta_R ] };   # Remap Right Alt to Command
+
+    modifier_map Mod1    { Alt_R };
+    modifier_map Mod4    { Meta_L, Meta_R };
+};
+
