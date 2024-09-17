@@ -39,21 +39,28 @@ NOTE: if the merged file was called `evdev`, `setxkbmap` would resolve it from `
 This is implemented as an xkb option so it can extends various layouts. The option name is `xps13:mac`.
 
 Modfier keys on XPS13 US keyboard:
+```monospace
 ┌────┬────┬─────┬─────┬─────────────┬─────┬────┐
 │Ctrl│ Fn │ Win │ Alt │    Space    │ Alt │Ctrl│
 └────┴────┴─────┴─────┴─────────────┴─────┴────┘
+```
 
 Modifier keys on Apple Magic Keyboard:
+```monospace
 ┌────┬────┬─────┬─────┬─────────────┬─────┬────┐
 │ Fn │Ctrl│ Opt │ Cmd │    Space    │ Cmd │ Opt│
 └────┴────┴─────┴─────┴─────────────┴─────┴────┘
+```
 
 The Option keys translate to Alt, the Command keys translate to Meta. For my use case, Switching up Fn an Ctrl was not important, I also did not change the Win key.
 
 The resulting keys with `xps13:mac` option is:
+
+```monospace
 ┌────┬────┬─────┬─────┬─────────────┬─────┬────┐
 │Ctrl│ Fn │ Win │ Cmd │    Space    │ Cmd │ Opt│
 └────┴────┴─────┴─────┴─────────────┴─────┴────┘
+```
 
 Activating these modifiers on top of the US keyboard layout can be done as below:
 ```bash
