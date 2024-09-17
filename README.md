@@ -9,6 +9,11 @@ git clone https://github.com/pmiklos/xkb.git ~/.config/xkb
 ```
 
 Run the merge script which merges the system xkb rules with the ones from this project.
+
+```bash
+~/.config/xkb/merge.sh
+```
+
 This is needed because `setxkbmap` does not recognize the `! include` stanza and so it would not be able to generate the full keyboard layout.
 As a workaround the merge script merges all rules so `setxkbmap` can resolve an RMLVO (Rule, Model, Layout, Variant, Option) configuration into the correct KcCGST (Key codes, Compat, Geometry, Symbols, Types) output that can be fed to `xkbcompat`.
 
