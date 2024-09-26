@@ -1,5 +1,25 @@
 # Linux keyboard layouts
 
+## Foreword
+
+Keyboard layouts can be easily customized by using various `xkb` options.
+For example, the `xps13:mac` layout can be achieved as well by running the command below:
+
+```bash
+setxkbmap -layout us \
+    -option 'ctrl:rctrl_ralt' \
+    -option 'caps:ctrl_modifier' \
+    -option 'altwin:swap_alt_win' \
+    -print | xkbcomp - $DISPLAY
+```
+
+or on Gnome:
+
+```bash
+gsettings set org.gnome.desktop.input-sources \
+    xkb-options "['altwin:swap_alt_win', 'ctrl:rctrl_ralt', 'ctrl:nocaps']"
+```
+
 ## Installation
 
 Clone the repository under `~/.config/xkb`:
